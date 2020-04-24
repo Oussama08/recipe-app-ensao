@@ -1,0 +1,23 @@
+.directions__wrapper {
+  height: 100%;
+  width: 100%;
+  .directions {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+  }
+}

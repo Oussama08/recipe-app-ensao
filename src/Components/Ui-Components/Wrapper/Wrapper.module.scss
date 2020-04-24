@@ -1,0 +1,8 @@
+.wrapper {
+  z-index: 999;
+  transition: height 0.5s ease-in-out;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+}

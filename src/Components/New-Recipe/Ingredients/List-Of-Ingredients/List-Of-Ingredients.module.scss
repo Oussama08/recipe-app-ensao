@@ -1,0 +1,43 @@
+.list__of--ingredients {
+  width: 50%;
+  height: 80%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  .ingredient {
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    &:first-of-type {
+      margin-top: 3%;
+      transition: 0.1s ease;
+    }
+    .ingredient__name {
+      flex-basis: 95%;
+      height: 100%;
+      background: #fff;
+      text-transform: uppercase;
+      padding: 2%;
+      letter-spacing: 3px;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      transition: all 0.1s ease-in;
+      transform: skewY(0deg);
+      perspective-origin: center;
+      perspective: 1000px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+      z-index: 1;
+      &:hover {
+        transform: skewY(-2deg);
+        z-index: 2;
+      }
+      i {
+        font-size: 0.8rem;
+        margin-left: auto;
+        margin-right: 3%;
+        color: rgba(0, 0, 0, 0.9);
+        cursor: pointer;
+      }
+    }
+  }
+}

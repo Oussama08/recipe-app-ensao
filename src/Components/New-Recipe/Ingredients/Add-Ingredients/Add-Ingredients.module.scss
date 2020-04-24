@@ -1,0 +1,73 @@
+@import '../../../../assets/scss/variables';
+.add__ingredient {
+  width: 50%;
+  height: 80%;
+  display: flex;
+  .add__ingredient--input {
+    width: 75%;
+    height: 100%;
+    .ingredient__name {
+      height: 20%;
+    }
+  }
+  .add__to--list {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    .add__bg {
+      background: $white;
+      border-radius: 30px;
+      padding: 11px;
+      cursor: pointer;
+      transition: all 200ms ease-in-out;
+      box-shadow: -5px 4px 10px rgba(0, 0, 0, 0.25);
+      &:hover {
+        box-shadow: none;
+      }
+      i {
+        font-size: 1.7rem;
+        color: $base;
+        &.addToListButton__validation {
+          animation: validateAddToListSignal 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+}
+.upload__btn--wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 3%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba($black, 0.3);
+  .btn {
+    border: 0;
+    border-radius: 30px;
+    padding: 4.3px 5.2px;
+    background: #fff;
+    box-shadow: -5px 4px 10px rgba(0, 0, 0, 0.25);
+    margin-left: 3%;
+    i {
+      color: $base;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  }
+}
+
+@keyframes validateAddToListSignal {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}

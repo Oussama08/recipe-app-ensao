@@ -1,0 +1,37 @@
+{
+  "name": "recipe-app-ensao",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://Oussama08.github.io/recipe-app-ensao",
+  "dependencies": {
+    "node-sass": "^4.13.1",
+    "react": "^16.6.3",
+    "react-alert": "^4.0.4",
+    "react-alert-template-basic": "^1.0.0",
+    "react-dom": "^16.6.3",
+    "react-icons": "^3.10.0",
+    "react-scripts": "2.1.1",
+    "react-transition-group": "^2.5.3",
+    "uniqid": "^5.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}

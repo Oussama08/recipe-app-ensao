@@ -1,0 +1,35 @@
+@import '../../../assets/scss/variables';
+%commons {
+  border-radius: 30px;
+  border: 2px solid;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  letter-spacing: 3px;
+  word-spacing: 1px;
+  margin: 1%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease-in-out;
+  box-shadow: 0px 2px 4px rgba($black, 0.18);
+  &:hover {
+    box-shadow: -9px 8px 20px rgba($black, 0.3);
+  }
+}
+.dark__button {
+  @extend %commons;
+  background: $base;
+  color: $white;
+  border-color: $base;
+  i {
+    color: $white;
+  }
+}
+.light__button {
+  @extend %commons;
+  background: $white;
+  color: $base;
+  border-color: $base;
+  i {
+    color: rgba($black, 0.9);
+  }
+}

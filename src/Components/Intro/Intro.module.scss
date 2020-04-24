@@ -1,0 +1,19 @@
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.next__action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+}
+.divs {
+  margin: 40px;
+  color: rgb(255, 136, 0);
+}

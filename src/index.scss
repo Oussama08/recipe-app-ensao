@@ -1,0 +1,42 @@
+@import "./assets/scss/variables";
+@import url("https://fonts.googleapis.com/css?family=Lato:400");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+}
+::-moz-focus-inner {
+  border: 0;
+}
+body {
+  background: $primary-background;
+  overflow: hidden;
+}
+
+::selection {
+  background: $base;
+  color: $black;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6003c;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}

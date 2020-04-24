@@ -1,0 +1,24 @@
+@import '../../../../assets/scss/variables.scss';
+.single__process {
+  width: 80%;
+  background: $white;
+  padding: 2%;
+  box-shadow: -5px 4px 10px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.2s ease-in-out;
+  display: flex;
+  &:hover {
+    box-shadow: -9px 7px 13px rgba(0, 0, 0, 0.25);
+  }
+  .count {
+    width: 10%;
+    background: transparent;
+    padding: 4px 0;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2% 0;
+    color: #d6003c;
+    border-bottom: 2px solid #000;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+}

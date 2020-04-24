@@ -1,0 +1,96 @@
+@import '../../../assets/scss/variables';
+.recipe__basic {
+  height: 100%;
+  width: 100%;
+  .press__Enter {
+    margin: 2% 0;
+    border-bottom: 2px solid $black;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 4px 0;
+    width: 10%;
+    display: inline-block;
+    i {
+      font-size: 1.5rem;
+      transform: rotate(90deg) translateY(-15px);
+      color: $base;
+    }
+  }
+  .input__wrapper {
+    height: 50%;
+  }
+  .tags {
+    padding: 2%;
+    height: 30%;
+    transition: all 0.5s ease-in-out;
+    .tag {
+      text-transform: lowercase;
+      font-size: 0.9rem;
+      letter-spacing: 2px;
+      border-radius: 30px;
+      background: rgba(214, 0, 60, 0.85);
+      color: #fff;
+      padding: 5px 14px;
+      margin: 0px 12px 12px 0;
+      display: inline-block;
+      cursor: pointer;
+      i {
+        font-size: inherit;
+      }
+    }
+  }
+  .actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+  }
+  .tag {
+    position: relative;
+    &:nth-child(even) {
+      .remove {
+        width: 100%;
+        height: 0;
+      }
+    }
+    &:nth-child(odd) {
+      .remove {
+        width: 0%;
+        height: 100%;
+      }
+    }
+    &:nth-child(even):hover {
+      .remove {
+        height: 100%;
+      }
+    }
+    &:nth-child(odd):hover {
+      .remove {
+        width: 100%;
+      }
+    }
+    .remove {
+      position: absolute;
+      background: #fff;
+      top: 0;
+      border-radius: 30px;
+      left: 0;
+      transition: all 0.2s ease-in-out;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        color: black;
+        font-size: 1.2rem;
+      }
+    }
+    i {
+      font-size: 0.8rem;
+      color: #fff;
+      margin-right: 2px;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}

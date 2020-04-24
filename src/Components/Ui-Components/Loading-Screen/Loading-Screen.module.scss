@@ -1,0 +1,62 @@
+@import '../../../assets/scss/variables';
+.loading__screen {
+  position: absolute;
+  z-index: 9999;
+  width: 200%;
+  height: 100%;
+  background: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .wrapper {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+}
+
+.wrapper {
+  .text {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    span {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-left: 20px;
+      color: #000;
+    }
+    img {
+      animation-name: jump;
+      animation-delay: 0.5s;
+      animation-timing-function: ease-in-out;
+      animation-duration: 1s;
+      display: inline-block;
+      animation-iteration-count: infinite;
+    }
+  }
+  .illustration {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    img {
+      width: 280px;
+      height: 280px;
+    }
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}

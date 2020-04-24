@@ -1,0 +1,35 @@
+@import "../../assets/scss/variables.scss";
+
+.all_recipes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  .navigation {
+    height: 15%;
+    padding: 0 2%;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: all 0.2s ease-in-out;
+    .page__name {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      word-spacing: 2px;
+      color: rgba($black, 0.85);
+      font-weight: 600;
+    }
+  }
+  .all-recipes__wrapper {
+    height: 85%;
+    width: 100%;
+    padding: 2%;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

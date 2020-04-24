@@ -1,0 +1,39 @@
+@import '../../../assets/scss/variables';
+
+.input {
+  background: transparent;
+  border: 0;
+  padding: 4px 0;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 2% 0;
+  color: $base;
+  border-bottom: 2px solid $black;
+  font-size: 1.2rem;
+  font-weight: 600;
+  caret-color: $base;
+  &::placeholder {
+    color: $base;
+  }
+  &:-moz-placeholder {
+    color: $base;
+    opacity: 1;
+  }
+  &::-moz-placeholder {
+    color: $base;
+    opacity: 1;
+  }
+  &.validation {
+    animation: validationSignal 0.2s ease-in-out;
+  }
+}
+
+@keyframes validationSignal {
+  0% {
+    letter-spacing: 2px;
+  }
+  50% {
+    letter-spacing: 4px;
+  }
+}
