@@ -67,7 +67,7 @@ export class Intro extends React.Component {
             </Ui.Button>
             <div>
               Check out my GitHub
-              <a target="_blank" href="https://www.github.com/Oussama08">
+              <a  href="https://www.github.com/Oussama08">
                 <i className="fab fa-github"></i>
               </a>
             </div>
