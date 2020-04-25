@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/recipe-react-webapp/precache-manifest.b3d10659f575d984a6b64a69c8e04284.js"
+  "/recipe-app-ensao/precache-manifest.92b512cb2200797747ea0011b2315982.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/recipe-react-webapp/index.html", {
+workbox.routing.registerNavigationRoute("/recipe-app-ensao/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
