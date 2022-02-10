@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://Oussama08.github.io/recipe-app-ensao",
   "dependencies": {
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.6.3",
     "react-alert": "^4.0.4",
     "react-alert-template-basic": "^1.0.0",
